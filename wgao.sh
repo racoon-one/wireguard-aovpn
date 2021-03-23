@@ -1,7 +1,7 @@
 #!/bin/bash
 
-ssid="R4C00N"
-vpn_config_file="home"
+ssid=" "
+vpn_config_file=" "
 
 if (( $( iwgetid -r ) == $ssid )) 
 then 
