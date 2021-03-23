@@ -1,9 +1,11 @@
 #!/bin/bash
 
+ssid="R4C00N"
+vpn_config_file="home"
 
-if (( $( iwgetid -r ) == "yeet" )) 
+if (( $( iwgetid -r ) == $ssid )) 
 then 
-    echo AOVPN CONNECTED
+    wg-quick down $vpn_config_file
+else
+    wg-quick up $vpn_config_file
 fi
-
-#iwgetid -r
