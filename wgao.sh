@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ssid=" " #Insert your WLAN SSID here
-vpn_config_file=" " #/etc/wireguard name of the config file you want to use.
+vpn_config_file=" " #/etc/wireguard name of the config file you want to use (without the file extension).
 
 if (( $( iwgetid -r ) == $ssid )) 
 then 
